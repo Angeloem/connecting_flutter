@@ -8,8 +8,8 @@ void main () => {
 		home: new Scaffold(
 			appBar: AppBar(
 				title: Text("Heading"),
-				backgroundColor: Colors.orangeAccent,
+				backgroundColor: Colors.blue[400]
 			),
 		),
-	));
-}
+	))
+};
