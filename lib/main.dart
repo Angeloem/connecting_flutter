@@ -1,5 +1,15 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp();
 
 // https://jsonplaceholder.typicode.com/posts
+
+void main () => {
+	runApp(new MaterialApp(
+		home: new Scaffold(
+			appBar: AppBar(
+				title: Text("Heading"),
+				backgroundColor: Colors.orangeAccent,
+			),
+		),
+	));
+}
