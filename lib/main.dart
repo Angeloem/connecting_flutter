@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart';
+import 'package:http/http.dart' as http;
 
 
-// https://jsonplaceholder.typicode.com/posts
 
 void main () => {
 	runApp(new MaterialApp(
@@ -14,3 +13,12 @@ void main () => {
 		),
 	))
 };
+
+Future <String> getJson() async{
+  String apiUrl = "https://jsonplaceholder.typicode.com/posts";
+
+  // getting the data now
+  http.Response result = await http.get(apiUrl);
+
+  return result.body;
+}
